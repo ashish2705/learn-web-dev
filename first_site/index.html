@@ -1,27 +1,38 @@
 <!DOCTYPE html>
 <html lang='en'>
 <head>
-	<title>first code</title>
+	<meta charset='utf-8'>
+	<title>&quot; first code &quot;</title>
 </head>
-<body id='bd' style="background-color:red">
+<body>
 <p style="text-align:center;color:navy;font-size:200%;font-family:verdana">HELLO TANYA!!</p>
-<p id ='demo' style="text-align:center;font-size:290%;font-family:courier">HELLO PRIYA!!</p>
+<p id ='demo' style="text-align:center;font-size:290%;font-family:courier">HELLO<span style="margin-left:100px">PRIYA!!</span></p>
 
-<p style="color:black;font-size:200%"> WANT TO CHANGE BACKGROUND COLOR??</p> <br>
+<p style="color:black;font-size:200%"> WANT&nbsp;TO&nbsp;CHANGE&nbsp;BACKGROUND&nbsp;COLOR??</p> <br>
 
-<form action="practice.php" method ="get"> 
+<form oninput="x.value=anfun(clr.value)"> 
 	<label for="clr">color:</label>
-	<input type="text" id='clr' name='clr' value='red'><br>
-	<input type="submit" value="submit">
+	<input type="text" id='clr' name='clr' value='white'><br>
+	<output name='x' for='clr'></output>
+	<script>
+		function anfun(clr){
+			document.body.style.background=clr;
+		}
+	</script>
 </form>
+<br>
+<a href="another.html" title="another page">Go to another basic page</a>
+<span style="margin-left:20px"></span>
+<a href="https://github.com/ashish2705.html" title="github account" target="_blank">My GitHub page</a>
 
-
-
-<br> <span>complain? <button onclick="myfunction()">click here</button></span>
+<div><br>complain? <button onclick="myfunction()">click here</button></div>
+<p><br></p>
 <script>
 	function myfunction(){
-		alert("goo khalo jyada sikayat h to!");
+		alert("jyada stud ho kya??");
 	}
 </script>
+<hr><br>
+<footer> Ashish 2020 &copy; Copyright </footer>
 </body>
 </html>
