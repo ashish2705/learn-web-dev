@@ -1,11 +1,26 @@
 <!DOCTYPE html>
-<html>
+<html lang='en'>
 <head>
 	<title>first code</title>
 </head>
-<body>
-<h1>HELLO TANYA!!</h1>
-<h2>HELLO PRIYA!!</h2>
-<h3>goo ka paad paad ka goo</h3>
+<body id='bd' style="background-color:red">
+<p style="text-align:center;color:navy;font-size:200%;font-family:verdana">HELLO TANYA!!</p>
+<p id ='demo' style="text-align:center;font-size:290%;font-family:courier">HELLO PRIYA!!</p>
+
+<p style="color:black;font-size:200%"> WANT TO CHANGE BACKGROUND COLOR??</p> <br>
+<form action="practice.php" method="get"> 
+	<label for="clr">color:</label>
+	<input type="text" id='clr' name='clr'>
+	<input type='submit' value="submit">
+</form>
+
+
+
+<br> <span>complain? <button onclick="myfunction()">click here</button></span>
+<script>
+	function myfunction(){
+		alert("goo khalo jyada sikayat h to!");
+	}
+</script>
 </body>
 </html>
