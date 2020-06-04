@@ -1,0 +1,47 @@
+		*{
+			box-sizing:border-box;
+		}
+		body{
+			overflow:auto;
+			background: url("bg.jpg");
+			margin:40px;
+			position: relative;
+		}
+		h1{
+			text-align:center;
+			font-family:candara;
+			color:blue;
+		}
+		section{
+			clear:left;
+		}
+		article span{
+			font-family:Verdana;
+			font-size: 200%;
+			color:magenta;
+		}
+
+		header li{
+			list-style: none;
+		}
+		 header a:link,a:visited {
+			text-decoration: none;
+			background-color:#2f8c2a;
+			border:2px solid blue;
+			color:black;
+			display: block;
+			text-align: center;
+			margin:1px;
+			width:200px;
+		}
+
+		a:hover,a:active{
+			background-color:blue;
+			color:white;
+			cursor:pointer;
+		}
+		footer{
+			position: relative;
+			top:20px;
+			clear:both;
+		}
