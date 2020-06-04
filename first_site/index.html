@@ -9,16 +9,10 @@
 
 <p style="color:black;font-size:200%"> WANT TO CHANGE BACKGROUND COLOR??</p> <br>
 
-<form oninput="x.value=anfun(clr.value)"> 
+<form action="practice.php" method ="get"> 
 	<label for="clr">color:</label>
 	<input type="text" id='clr' name='clr' value='red'><br>
-	<output name='x' for='clr'></output>
-		<script>
-			function anfun(clr)
-			{
-				document.body.style.background=clr;
-			}
-</script>
+	<input type="submit" value="submit">
 </form>
 
 
