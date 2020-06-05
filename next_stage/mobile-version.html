@@ -24,24 +24,30 @@
 			height:300px;
 		}
 	</style>
-	<link rel="stylesheet" href="adv.css">
+	<link rel="stylesheet" href="mob.css">
 </head>
 <body>
 	<h1> HELLO WEB DESIGNING!!</h1>
 	<p> NOTE:This website is for study purposes only. It was created using HTML5 and CSS3.
 		Furthermore, this is to demonstrate media processes in websites for any device.<br>
-		Currently, you are on slightly <strong><i>advanced website</i></strong> which can be opened using any device.
+		Currently, you are on <strong><i>mobile website</i></strong> which can be opened using any device.
 		You can go to other versions of same website also by clicking below links.<br>
 	All these sites have same html structure just different stylesheet.</p>
-	<p>If you are using desktop chrome browser then open chrome developer tools by pressing F12.There will be a mobile icon on upper left corner of the newly opened tab, click it. <br>Now you can resize your output screen.If you are not on chrome desktop you can see the same effects simply by resizing your browser's window.<br>
-	It is designed for 3 types of devices: large, medium, small.
-	<ul>
-		<li>For large devices destop version is implemented with floating image to right and video to left.</li>
-		<li>For medium devices, size of media remains same but position changes.</li>
-		<li>For small devices, media position as well as size both changes. Currently I have set media size to 90% of the screen.</li>
-	</ul></p>
-	<button><a href="desktop-version.html">destop version</a></button> <button><a href="mobile-version.html">mobile version</a></button>
+	<p>Due to less screen size there will only be one column on screen.<br> You can also change size of media. By default, it is set for 90% of your screen width.</p>
+	<button><a href="desktop-version.html">destop version</a><button><a href="index.html">advanced version</a></button>
+	<br>
+		<form oninput="x.value=myfunc(sz.value)"> 
+		<label for="sz">Change your media size here:</label>
 
+		<input type="range" id='sz' name='sz' value='90' min='0' max='100'><br>
+		<output name='x' for='iz'></output>
+		<script>
+			function myfunc(x){
+				document.getElementById("cor").style.width=x+"%";
+				document.getElementById("vid").style.width=x+"%";
+			}
+		</script>
+	</form>
 <header>
 	<ul>
 		<li><a href="#covid-19">Covid-19 pandemic</a>	</li>

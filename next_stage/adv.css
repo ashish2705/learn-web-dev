@@ -1,0 +1,26 @@
+@media(min-width:1200px){
+			#covid-19{
+				width:60%;
+				position: relative;
+			}
+			#elep-kill{
+				width:60%;
+				float:right;
+			}
+			#vid{
+				position: absolute;
+				top:0px;
+				right:110%;
+			}
+			#cor{
+				position: absolute;
+				top:0px;
+				left:110%;
+			}
+		}
+
+		@media(max-width:550px){
+			#cor,#vid{
+				width:90%;
+			}
+		}
